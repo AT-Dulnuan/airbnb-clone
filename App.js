@@ -8,7 +8,7 @@
 
 import React from 'react';
 import {
-  SafeAreaView, StatusBar,
+  SafeAreaView, StatusBar, FlatList
 } from 'react-native';
 
 import Icon from 'react-native-vector-icons/FontAwesome';
@@ -16,14 +16,18 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 import HomeScreen from './src/screens/home';
 import Post from './src/components/Post';
 
+import posts from './assets/data/feed';
 
 const App = () => {
 
   return (
     <SafeAreaView style={{flex: 1, backgroundColor: "white"}}>
-      <StatusBar barStyle="light-content" />
+      <StatusBar barStyle="dark-content" backgroundColor="white" />
       {/* <HomeScreen /> */}
-      <Post />
+      <FlatList
+        data={posts} 
+        renderItem={({item}) => <Post post={item} />}
+      />
     </SafeAreaView>
   );
 };

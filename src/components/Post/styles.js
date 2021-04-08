@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
         fontSize: 18,
         color: 'black',
         lineHeight: 26,
-        marginVertical: 8
+        marginVertical: 6
     },
     total: {
         textDecorationLine: 'underline',
