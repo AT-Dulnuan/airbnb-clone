@@ -7,7 +7,6 @@
  */
 
 import React from 'react';
-import type {Node} from 'react';
 import {
   SafeAreaView, StatusBar,
 } from 'react-native';
@@ -15,13 +14,16 @@ import {
 import Icon from 'react-native-vector-icons/FontAwesome';
 
 import HomeScreen from './src/screens/home';
+import Post from './src/components/Post';
 
-const App: () => Node = () => {
+
+const App = () => {
 
   return (
-    <SafeAreaView>
+    <SafeAreaView style={{flex: 1, backgroundColor: "white"}}>
       <StatusBar barStyle="light-content" />
-      <HomeScreen />
+      {/* <HomeScreen /> */}
+      <Post />
     </SafeAreaView>
   );
 };
