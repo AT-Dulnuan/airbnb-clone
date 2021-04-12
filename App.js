@@ -15,6 +15,7 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 
 import HomeScreen from './src/screens/home';
 import Post from './src/components/Post';
+import DestinationSearchScreen from './src/screens/destination search screen';
 
 import posts from './assets/data/feed';
 
@@ -24,10 +25,11 @@ const App = () => {
     <SafeAreaView style={{flex: 1, backgroundColor: "white"}}>
       <StatusBar barStyle="dark-content" backgroundColor="white" />
       {/* <HomeScreen /> */}
-      <FlatList
+      {/* <FlatList
         data={posts} 
         renderItem={({item}) => <Post post={item} />}
-      />
+      /> */}
+      <DestinationSearchScreen />
     </SafeAreaView>
   );
 };
