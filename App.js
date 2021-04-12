@@ -16,6 +16,7 @@ import Icon from 'react-native-vector-icons/FontAwesome';
 import HomeScreen from './src/screens/home';
 import Post from './src/components/Post';
 import DestinationSearchScreen from './src/screens/destination search screen';
+import GuestsScreen from './src/screens/Guests'
 
 import posts from './assets/data/feed';
 
@@ -29,7 +30,8 @@ const App = () => {
         data={posts} 
         renderItem={({item}) => <Post post={item} />}
       /> */}
-      <DestinationSearchScreen />
+      {/* <DestinationSearchScreen /> */}
+      <GuestsScreen />
     </SafeAreaView>
   );
 };
