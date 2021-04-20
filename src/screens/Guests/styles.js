@@ -2,7 +2,9 @@ import {StyleSheet} from 'react-native'
 
 const styles = StyleSheet.create({
     container: {
-        margin: 20
+        margin: 20,
+        justifyContent: 'space-between',
+        flex: 1
     },
     guest: {
         paddingVertical: 30,
@@ -37,6 +39,16 @@ const styles = StyleSheet.create({
     },
     disabled: {
         opacity: 0.3
+    },
+    searchBtn: {
+        backgroundColor: '#ff5a5f',
+        padding: 14,
+        borderRadius: 10
+    },
+    searchTxt: {
+        fontSize: 20,
+        color: 'white',
+        textAlign: 'center'
     }
 })
 

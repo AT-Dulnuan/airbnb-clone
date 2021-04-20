@@ -36,7 +36,7 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         position: 'absolute',
-        top: 30
+        top: 50
     },
     searchText: {
         fontSize: 20,

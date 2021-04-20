@@ -13,7 +13,6 @@ const Stack = createStackNavigator()
 const Router = () => {
     return (
         <NavigationContainer>
-            <StatusBar barStyle={"dark-content"} backgroundColor={"white"} />
             <Stack.Navigator>
                 <Stack.Screen name={"Home Tab"} component={HomeTabNavigator} options={{
                     headerShown: false
